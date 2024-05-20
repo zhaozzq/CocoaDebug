@@ -26,6 +26,6 @@ Pod::Spec.new do |s|
                           'Sources/Window/**/*.m',
                           'Sources/fishhook/**/*.c',
                           ]
-  # s.dependency "React/Core"
-  s.dependency "DeviceUtil", :git => 'https://gitee.com/HCC-Mobile/DeviceUtil.git', :commit => '6275b96'
+
+  s.dependency "DeviceUtil"
 end
