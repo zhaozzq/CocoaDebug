@@ -8,7 +8,7 @@
 
 #import "CocoaDebugDeviceInfo.h"
 #import "sys/utsname.h"
-#import "_DeviceUtil.h"
+#import <DeviceUtil/DeviceUtil.h>
 
 @implementation CocoaDebugDeviceInfo
 
@@ -57,7 +57,7 @@
 
 
 - (NSString *)getPlatformString {
-    return [[_DeviceUtil new] hardwareSimpleDescription];
+    return [[DeviceUtil new] hardwareSimpleDescription];
 }
 
 - (NSString *)localizedModel {
