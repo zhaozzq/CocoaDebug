@@ -28,7 +28,7 @@ class CocoaDebugTabBarController: UITabBarController {
             appearance.shadowColor = .clear    //removing navigationbar 1 px bottom border.
 //            self.tabBar.appearance().standardAppearance = appearance
 //            self.tabBar.appearance().scrollEdgeAppearance = appearance
-            appearance.backgroundColor = .black
+            appearance.backgroundColor = "#1f2124".hexColor
             self.tabBar.standardAppearance = appearance
             if #available(iOS 15.0, *) {
                 self.tabBar.scrollEdgeAppearance = appearance

@@ -36,7 +36,7 @@ class CocoaDebugNavigationController: UINavigationController {
             appearance.shadowColor = .clear    //removing navigationbar 1 px bottom border.
 //            UINavigationBar.appearance().standardAppearance = appearance
 //            UINavigationBar.appearance().scrollEdgeAppearance = appearance
-            appearance.backgroundColor = .black
+            appearance.backgroundColor = "#1f2124".hexColor
             self.navigationBar.standardAppearance = appearance
             self.navigationBar.scrollEdgeAppearance = appearance
         }
