@@ -277,9 +277,23 @@ class LogViewController: UIViewController {
         segmentedControl.tintColor = Color.mainGreen
         
         if UIScreen.main.bounds.size.width == 320 {
-            segmentedControl.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 11)], for: .normal)
+            segmentedControl.setTitleTextAttributes([
+                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 11),
+                NSAttributedString.Key.foregroundColor: UIColor.white
+            ], for: .normal)
+            segmentedControl.setTitleTextAttributes([
+                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 11),
+                NSAttributedString.Key.foregroundColor: UIColor.white
+            ], for: .selected)
         } else {
-            segmentedControl.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13)], for: .normal)
+            segmentedControl.setTitleTextAttributes([
+                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13),
+                NSAttributedString.Key.foregroundColor: UIColor.white
+            ], for: .normal)
+            segmentedControl.setTitleTextAttributes([
+                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13),
+                NSAttributedString.Key.foregroundColor: UIColor.white
+            ], for: .selected)
         }
         
         //notification
