@@ -60,6 +60,7 @@
         UINavigationBarAppearance *appearance = [[UINavigationBarAppearance alloc] init];
         [appearance configureWithOpaqueBackground];
         appearance.shadowColor = [UIColor clearColor];
+        appearance.backgroundColor = UIColor.blackColor;
         self.navigationController.navigationBar.standardAppearance = appearance;
         self.navigationController.navigationBar.scrollEdgeAppearance = appearance;
     }
